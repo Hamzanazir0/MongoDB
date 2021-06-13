@@ -4,21 +4,19 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
+const createProduct = require("./createProduct");
+
 const mongo = require("mongoose");
 mongo
   .connect("mongodb://localhost/mernstack", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => {
+  .then(async () => {
     console.log("Connection Succesfull with mongo");
+    let product = await createProduct("Dell", 300, ["acha hay"], "ABC");
+    console.log(product);
   })
   .catch((err) => {
-    console.log("Error Connection");
+    console.log("Error Connection" + err);
   });
-
-app.get("/", (req, res) => {
-  res.send("Hello");
-});
-
-app.listen(3000);
