@@ -14,7 +14,7 @@ mongo
   })
   .then(async () => {
     console.log("Connection Succesfull with mongo");
-    let product = await createProduct("Dell", 300, ["acha hay"], "ABC");
+    let product = await createProduct("Dell", 300, ["acha hay"]);
     console.log(product);
   })
   .catch((err) => {
