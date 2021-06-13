@@ -1,0 +1,25 @@
+{
+  "name": "MongoDB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamzanazir0/MongoDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hamzanazir0/MongoDB/issues"
+  },
+  "homepage": "https://github.com/Hamzanazir0/MongoDB#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "underscore": "^1.13.1"
+  }
+}
